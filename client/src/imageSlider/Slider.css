@@ -1,0 +1,79 @@
+/* Slider */
+
+.slider div {
+  width: 100%;
+}
+.slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.slide h2 {
+  font-size: 30px;
+  color: white;
+}
+
+.contactButton {
+}
+
+button.ui.button {
+  background-color: #BADA55;
+}
+
+.slidernav {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dotsContainer {
+  flex-basis: 10vw;
+  text-align: center;
+  align-self: baseline;
+}
+.dotsContainer .dot {
+  background: #222;
+  padding: 0px 8px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 120px;
+}
+.dotsContainer .current {
+  background: #fff;
+}
+
+
+.nextArrow {
+  flex-basis: 5vw;
+  cursor: pointer;
+  transition: all ease-in .2s;
+  color: #fff;
+  z-index: 3;
+}
+.nextArrow:hover {
+  opacity: 0.5;
+  transform: scale(1.4);
+  transition: all ease-in .2s;
+}
+
+.backArrow {
+  flex-basis: 5vw;
+  cursor: pointer;
+  transition: all ease-in .2s;
+  color: #fff;
+  z-index: 3;
+}
+.backArrow:hover {
+  opacity: 0.5;
+  transform: scale(1.4);
+  transition: all ease-in .2s;
+}

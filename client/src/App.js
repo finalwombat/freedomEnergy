@@ -1,21 +1,48 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Menu from './Menu'
+import { BrowserRouter as Router} from 'react-router-dom'
+import Routes from './Routes'
+import Footer from './Footer'
 import './App.css';
 
 class App extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {location: '/'}
+    this.getLocation = this.getLocation.bind(this)
+    this.setLocation = this.setLocation.bind(this)
+  }
+
+
+  setLocation(name){
+    const location = name ? name : this.getLocation()
+    this.setState({location})
+  }
+
+  componentWillMount(){
+    this.setLocation()
+  }
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <Router>
+        <div className="App">
+          <Menu handleItemClick={this.setLocation} location={this.state.location}/>
+          <Routes handleItemClick={this.setLocation}/>
+          <Footer handleItemClick={this.setLocation}/>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      </Router>
     );
   }
+
+  getLocation() {
+    console.log(this.props.location)
+    const loc = this.props.location
+    return 
+  }
 }
+
+
 
 export default App;
