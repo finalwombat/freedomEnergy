@@ -12,6 +12,7 @@
 }
 
 .slide h1 {
+  margin-top: 20vh;
   font-size: 60px;
   color: white;
 }
@@ -29,7 +30,8 @@ button.ui.button {
 }
 
 .slidernav {
-  margin-top: 50px;
+  margin-top: auto;
+  margin-bottom: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
