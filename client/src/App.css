@@ -144,9 +144,8 @@ html, body {
   border: 2px solid lightgrey;
 }
 
-.menu {
-  padding-left: 400px;
-  padding-right: 50px;
+.mainMenu {
+  margin-right: 10vw;
 }
 
 a.item.call {
