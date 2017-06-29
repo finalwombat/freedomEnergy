@@ -62,9 +62,6 @@ html, body {
   align-items: center;
 }
 
-.card > * {
-  border: 1px solid red;
-}
 .card h2 {
   color: white;
 }
