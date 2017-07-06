@@ -48,6 +48,7 @@ button.ui.button {
   margin-right: 5px;
   cursor: pointer;
   border-radius: 120px;
+  opacity: 0.5;
 }
 .dotsContainer .current {
   background: #fff;
@@ -62,10 +63,11 @@ button.ui.button {
   z-index: 3;
   margin: 0;
   padding: 0;
+  opacity: 0.5;
 }
 .nextArrow:hover {
   opacity: 0.5;
-  transform: scale(1.4);
+  transform: scale(1.2);
   transition: all ease-in .2s;
 }
 
@@ -77,9 +79,10 @@ button.ui.button {
   z-index: 3;
   margin: 0;
   padding: 0;
+  opacity: 0.5;
 }
 .backArrow:hover {
   opacity: 0.5;
-  transform: scale(1.4);
+  transform: scale(1.2);
   transition: all ease-in .2s;
 }
