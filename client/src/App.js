@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Menu from './Menu'
+import Menu from './Menu2'
 import { BrowserRouter as Router} from 'react-router-dom'
 import Routes from './Routes'
 import Footer from './Footer'
@@ -39,7 +39,7 @@ class App extends Component {
   getLocation() {
     console.log(this.props.location)
     const loc = this.props.location
-    return 
+    return
   }
 }
 
