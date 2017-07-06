@@ -96,9 +96,10 @@ html, body {
 
 .mainImage h1 {
   font-weight: 100;
-  font-size: 4em;
+  font-size: 4.4vw;
   position: absolute;
   width: 100%;
+  top: 5%;
   bottom: 70%;
   text-align: center;
   color: white;
