@@ -29,6 +29,10 @@ button.ui.button {
   background-color: #BADA55;
 }
 
+button.ui.button:hover {
+  background-color: #BADA56;
+}
+
 .slidernav {
   margin-top: auto;
   margin-bottom: 2vh;
