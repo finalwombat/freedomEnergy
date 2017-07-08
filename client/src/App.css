@@ -248,6 +248,6 @@ a.item:hover {
     padding: 5px;
   }
 
-  .footer h1:hover, h3:hover {
+  .footer h1:hover, .footer h3:hover {
       color: grey;
     }
