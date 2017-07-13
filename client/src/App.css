@@ -45,7 +45,7 @@ html, body {
   height: 300px;
   width: 100vw;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .cards a {
@@ -58,11 +58,12 @@ html, body {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 
 .card h2 {
+  margin-top: 5vh;
   color: white;
 }
 
