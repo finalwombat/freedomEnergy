@@ -6,7 +6,7 @@ const Commercial = () => {
     <div className='commercialContainer'>
       <div className='mainImage'>
         <img src={image} alt='commercial'/>
-        <h1>Allow us to tailor a solar solution that is right for your business.</h1>
+        <h1>Commercial solution that is right for your business.</h1>
       </div>
       <div className='mainContent'>
         <div className='services'>
