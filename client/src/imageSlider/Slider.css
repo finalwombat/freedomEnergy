@@ -33,6 +33,9 @@ button.ui.button:hover {
   background-color: #BADA56;
 }
 
+.ui.animated.button {
+  padding-right: 1.5em!important;
+}
 .slidernav {
   margin-top: auto;
   margin-bottom: 2vh;
