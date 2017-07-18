@@ -71,6 +71,15 @@ html, body {
   color: white;
 }
 
+.bottomContact  {
+  display: flex;
+  justify-content: center;
+}
+
+.bottomContact .ui.animated.button {
+  padding-right: 0!important;
+}
+
 /* contact page */
 .contactContainer {
   display: flex;
@@ -162,7 +171,7 @@ html, body {
   background-color: #BADA55;
   opacity: 0.8;
   border-radius: 5px 150px 5px;
-  padding: 5px;
+  padding: 100px;
   margin-top: 20px;
   margin-bottom: 50px;
   text-align: center;
