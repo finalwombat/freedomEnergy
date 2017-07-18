@@ -10,7 +10,7 @@ const Footer = () => {
           <Button color='blue' icon='facebook' />
           <Link to="/residential"><h3>Residential</h3></Link>
           <Link to="/commercial"><h3>Commercial</h3></Link>
-          <Link to="/utility"><h3>utility</h3></Link>
+          <Link to="/utilities"><h3>utilities</h3></Link>
           <Link to="/contact"><h3>Contact</h3></Link>
         </div>
     </div>
