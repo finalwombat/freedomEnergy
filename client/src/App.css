@@ -176,6 +176,11 @@ html, body {
   margin-bottom: 50px;
   text-align: center;
 }
+
+/* commercial page */
+.commercialContainer .mainImage h1 {
+  top: 20vh;
+}
 /* Menu */
 .menu {
   display: flex;
