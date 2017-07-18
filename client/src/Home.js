@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from './imageSlider/Slider'
-import { Card, Image } from 'semantic-ui-react'
+import { Button, Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import residentialImage from './images/solar_house.jpg'
 import commercialImage from './images/solar_commercial.jpg'
@@ -18,6 +18,11 @@ const utilityBackground = {
   backgroundImage: `url(${utilityImage})`
 }
 
+const findOutMoreButton = <Button animated>
+  <Button.Content visible>Find Out More</Button.Content>
+  <Button.Content hidden><Icon name='right arrow' /></Button.Content>
+</Button>
+
 const Home = (props) => {
 
   const handleItemClick = (e) => {
@@ -31,20 +36,20 @@ const Home = (props) => {
         <div className="cards">
         <Link to='/residential'>
           <div className="card" style={residentialBackground} onClick={handleItemClick} name='/residential'>
-              <h2>Residential</h2>
-              <h3>Take control of your electricity bill with Freedom Solar</h3>
+              <h2>Residential Solutions</h2>
+              {findOutMoreButton}
           </div>
         </Link>
         <Link to='/commercial'>
           <div className="card" style={commercialBackground} onClick={handleItemClick} name='/commercial'>
-              <h2>Commercial</h2>
-              <h3>Cash flow positive energy solutions with $0 up front cost</h3>
+              <h2>Commercial Solutions</h2>
+              {findOutMoreButton}
           </div>
         </Link>
         <Link to='/utilities'>
           <div className="card" style={utilityBackground} onClick={handleItemClick} name='/utilities'>
-              <h2>Utilities</h2>
-              <h3>Creating a better grid with renewable energy solutions</h3>
+              <h2>Utility Solutions</h2>
+              {findOutMoreButton}
           </div>
         </Link>
         </div>
