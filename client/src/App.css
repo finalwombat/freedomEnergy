@@ -127,7 +127,7 @@ html, body {
   font-size: 1.5em;
 }
 
-.imageBlocks {
+.block {
   display: flex;
   width: 100vw;
   height: 45vh;
@@ -139,9 +139,19 @@ html, body {
   width: 50vw;
 }
 .contentBlock {
-  height: 100vh;
-  width: 100vw;
+  height: 45vh;
+  width: 50vw;
   background-color: #E6EBED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.contentBlock > * {
+
 }
 
 .whySolar {
