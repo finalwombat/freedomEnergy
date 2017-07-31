@@ -181,6 +181,10 @@ html, body {
 .commercialContainer .mainImage h1 {
   top: 20vh;
 }
+
+ul.dotPoint {
+  list-style-image: url('./images/tick2.png');
+}
 /* Menu */
 .menu {
   display: flex;
