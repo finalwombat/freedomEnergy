@@ -1,4 +1,6 @@
 import React from 'react'
+import { Button, Icon } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 import image from './images/solar_commercial_cropped.jpg'
 import image1 from './images/barley-field.jpg'
 import image2 from './images/solar-panel-2.png'
@@ -77,6 +79,14 @@ const Commercial = () => {
             <li>Grid-Connect and Hybrid systems</li>
           </ul>
         </div>
+      </div>
+      <div className='bottomContact'>
+      <Link to="/contact">
+          <Button animated size='big'>
+            <Button.Content visible>Contact Us</Button.Content>
+            <Button.Content hidden><Icon name='mail outline' /></Button.Content>
+          </Button>
+      </Link>
       </div>
     </div>
   )
