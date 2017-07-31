@@ -3,6 +3,7 @@ import image from './images/solar_commercial_cropped.jpg'
 import image1 from './images/barley-field.jpg'
 import image2 from './images/solar-panel-2.png'
 import image3 from './images/solar-install.jpg'
+import tick from './images/tick2.png'
 
 const Commercial = () => {
   return (
@@ -46,6 +47,35 @@ const Commercial = () => {
             <h1>Get the solution that is right for your business</h1>
             <p>Every business is different and will require a different solution. At Freedom Energy we talior a solution that is right for you at the lowest cost.</p>
           </div>
+        </div>
+      </div>
+      <div className='services'>
+        <h1>Commercial Solar</h1>
+        <p>Allow us to tailor a solar solution that is right for your business.
+          Freedom Energy offers eligible customers access to low-cost commercial funding.
+          In most cases, we can provide positive cash flow outcome from day one, leaving little or no exposure.
+          These low-risk solar funding options provide additional benefits such as:
+          </p>
+        <div className='dotPoints'>
+          <ul className='dotPoint'>
+            <li>Tax deductions</li>
+            <li>Depreciation</li>
+            <li>Off & On Balance Sheet finance options</li>
+            <li>Immediate positive cash flow</li>
+          </ul>
+        </div>
+        <h1>Services</h1>
+        <p>Services provided by our commercial team inclued:</p>
+        <div className='dotPoints'>
+          <ul className='dotPoint'>
+            <li>Grid Applications</li>
+            <li>System Design</li>
+            <li>Stakeholder Management</li>
+            <li>Network Feasibility Studies</li>
+            <li>Financial Forecasting</li>
+            <li>Rooftop & Ground Mount Systems</li>
+            <li>Grid-Connect and Hybrid systems</li>
+          </ul>
         </div>
       </div>
     </div>
