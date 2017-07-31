@@ -66,7 +66,6 @@ const Commercial = () => {
             <li>Immediate positive cash flow</li>
           </ul>
         </div>
-        <h1>Services</h1>
         <p>Services provided by our commercial team inclued:</p>
         <div className='dotPoints'>
           <ul className='dotPoint'>
