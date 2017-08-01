@@ -72,6 +72,8 @@ html, body {
 }
 
 .bottomContact  {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   display: flex;
   justify-content: center;
 }
