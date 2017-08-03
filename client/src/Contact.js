@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { Button, Form, input, Message} from 'semantic-ui-react'
+import axios from 'axios'
 
 class Contact extends Component {
   constructor(props){
@@ -30,6 +31,15 @@ class Contact extends Component {
 
   handleSubmit(event){
     console.log(this.state)
+    axios.post('./contactForm', {
+      info: this.state
+    })
+    .then(function(res) {
+      console.log(res.data)
+    })
+    .catch(function(error) {
+      console.log(error)
+    })
     event.preventDefault();
   }
   render(){
