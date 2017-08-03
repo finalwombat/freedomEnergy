@@ -12,7 +12,8 @@ class Contact extends Component {
       phoneNumber: '',
       email: '',
       state: '',
-      suburb: ''
+      suburb: '',
+      comments: ''
     }
 
     this.handleInputChange = this.handleInputChange.bind(this)
@@ -74,6 +75,10 @@ class Contact extends Component {
                 <input placeholder='Suburb' name='suburb' onChange={this.handleInputChange} value={this.state.suburb}></input>
               </Form.Field>
             </Form.Group>
+            <Form.Field>
+              <label>Comments</label>
+              <textarea placeholder='comments' name='comments' onChange={this.handleInputChange} value={this.state.comments}></textarea >
+            </Form.Field>
 
             <Message
               success
