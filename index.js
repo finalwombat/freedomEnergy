@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser')
 const generatePassword = require('password-generator');
+const mailer = require('./mailer.js')
 
 const app = express();
 
@@ -34,6 +35,7 @@ app.get('*', (req, res) => {
 
 app.post('/contactForm', (req, res) => {
   const info = req.body.info
+  mailer.sendmail(info)
   res.send(info)
 })
 const port = process.env.PORT || 5000;
