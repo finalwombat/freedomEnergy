@@ -47,16 +47,12 @@ class Contact extends Component {
   }
 
   handleSubmit(event){
-    console.log(this.state)
     const self = this
     axios.post('./contactForm', {
       info: this.state
     })
     .then(function(res) {
-      const resultDiv = document.querySelector('.result')
       self.setState({formSent: true})
-      console.log(self.state.formSent)
-      console.log(res.data)
     })
     .catch(function(error) {
       console.log(error)
