@@ -12,7 +12,7 @@ let transporter = nodemailer.createTransport({
 })
 
 
-const sendmail = (info) => {
+const sendmail = (info, callback) => {
 
   const userInfo = `<h2>${info.firstName} ${info.lastName}<h2>
                     <h3>phoneNumber: ${info.phoneNumber}</h3>
@@ -29,9 +29,9 @@ const sendmail = (info) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if(error){
-      return console.log(error)
+      callback(error)
     }
-    console.log('message sent', info.messageId, info.response)
+    callback('message sent', info.messageId, info.response)
   })
 
 }
