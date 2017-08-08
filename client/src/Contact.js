@@ -2,6 +2,20 @@ import React, {Component} from 'react'
 import { Button, Form, input, Message} from 'semantic-ui-react'
 import axios from 'axios'
 
+const Success = (props)=> {
+  if(!props.formSent){
+    //console.log('no success')
+    return null
+  }
+  return (
+    <div>
+      <Message
+      success
+      header='Success'
+      content="One of our consultants will contact you shortly"
+      />
+    </div>)
+}
 class Contact extends Component {
   constructor(props){
     super(props)
@@ -13,12 +27,14 @@ class Contact extends Component {
       email: '',
       state: '',
       suburb: '',
-      comments: ''
+      comments: '',
+      formSent: true
     }
 
     this.handleInputChange = this.handleInputChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
+
 
   handleInputChange(event) {
     const target = event.target
@@ -32,10 +48,14 @@ class Contact extends Component {
 
   handleSubmit(event){
     console.log(this.state)
+    const self = this
     axios.post('./contactForm', {
       info: this.state
     })
     .then(function(res) {
+      const resultDiv = document.querySelector('.result')
+      self.setState({formSent: true})
+      console.log(self.state.formSent)
       console.log(res.data)
     })
     .catch(function(error) {
@@ -77,14 +97,11 @@ class Contact extends Component {
             </Form.Group>
             <Form.Field>
               <label>Comments</label>
-              <textarea placeholder='comments' name='comments' onChange={this.handleInputChange} value={this.state.comments}></textarea >
+              <textarea placeholder='comments' name='comments' onChange={this.handleInputChange} value={this.state.comments}></textarea>
             </Form.Field>
-
-            <Message
-              success
-              header='Success'
-              content="We will contact you shortly"
-            />
+            <div>
+              <Success formSent={this.state.formSent} />
+            </div>
             <Button type='submit' onClick={this.handleSubmit}>Submit</Button>
           </Form>
         </div>
