@@ -28,7 +28,7 @@ class Contact extends Component {
       state: '',
       suburb: '',
       comments: '',
-      formSent: true
+      formSent: false
     }
 
     this.handleInputChange = this.handleInputChange.bind(this)
