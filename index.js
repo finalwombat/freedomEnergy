@@ -35,8 +35,7 @@ app.get('*', (req, res) => {
 
 app.post('/contactForm', (req, res) => {
   const info = req.body.info
-  mailer.sendmail(info)
-  res.send(info)
+  mailer.sendmail(info, (result) => res.send(result))
 })
 const port = process.env.PORT || 5000;
 app.listen(port);
