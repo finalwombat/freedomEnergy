@@ -339,12 +339,15 @@ a.item:hover {
     flex-direction: column;
     width: 100vw;
   }
+  .imageBlock {
+    height: 45vh;
+  }
   .imageBlock img {
     width: 100vw;
   }
   .contentBlock {
     width: 100vw;
-    height: 100%;
+    height: 45vh;
     background-color: #E6EBED;
     display: flex;
     flex-direction: column;
@@ -359,5 +362,24 @@ a.item:hover {
   }
   .contentBlock p {
     font-size: 1em;
+  }
+
+  .imageBlock1 {
+    order: 1;
+  }
+  .contentBlock1 {
+    order: 2;
+  }
+  .imageBlock2 {
+    order: 3;
+  }
+  .contentBlock2 {
+    order: 4;
+  }
+  .imageBlock3 {
+    order: 5;
+  }
+  .contentBlock3 {
+    order: 6;
   }
 }
