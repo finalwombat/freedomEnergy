@@ -275,6 +275,12 @@ a.item:hover {
   color: rgba(0, 0, 0, 0.95);
 }
 
+.smallMenu {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -304,9 +310,13 @@ a.item:hover {
   .App {
     display: flex;
   }
+  .logo {
+    padding-left: 0;
+  }
   .main {
     height: 100%
   }
+
   .cards {
     height: 100%;
     flex-direction: column;
