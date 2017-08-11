@@ -4,6 +4,7 @@ import SmallMenu from './SmallMenu'
 import { BrowserRouter as Router} from 'react-router-dom'
 import Routes from './Routes'
 import Footer from './Footer'
+import MediaQuery from 'react-responsive'
 import './App.css';
 
 class App extends Component {
@@ -29,8 +30,12 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          
-          <SmallMenu handleItemClick={this.setLocation} location={this.state.location}/>
+          <MediaQuery query='(min-width: 801px)'>
+            <Menu handleItemClick={this.setLocation} location={this.state.location}/>
+          </MediaQuery>
+          <MediaQuery query='(max-width: 800px)'>
+            <SmallMenu handleItemClick={this.setLocation} location={this.state.location}/>
+          </MediaQuery>
           <Routes handleItemClick={this.setLocation}/>
           <Footer handleItemClick={this.setLocation}/>
         </div>
