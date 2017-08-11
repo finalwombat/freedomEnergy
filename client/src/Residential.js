@@ -30,22 +30,22 @@ const Residential = () => {
         </div>
         <div className='contentBlocks'>
           <div className='block'>
-            <div className='imageBlock'>
+            <div className='imageBlock imageBlock1'>
               <img src={image1}/>
             </div>
-            <div className='contentBlock'>
+            <div className='contentBlock contentBlock1'>
               <h1>Break free from rising energy prices</h1>
               <p>Energy prices are constantly on the rise. Solar power can significantly reduce monthly electricity bills
                 by taking advantage of our most abundent and free energy source.</p>
             </div>
           </div>
           <div className='block'>
-            <div className='contentBlock'>
+            <div className='contentBlock contentBlock2'>
               <h1>The right solution for your roof</h1>
               <p>Freedom Energy offers cost-effective and flexible solutions to maxamize solar performance.
                 </p>
             </div>
-            <div className='imageBlock'>
+            <div className='imageBlock imageBlock2'>
               <img src={image2}/>
             </div>
           </div>

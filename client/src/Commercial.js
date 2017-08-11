@@ -23,29 +23,29 @@ const Commercial = () => {
       </div>
       <div className='contentBlocks'>
         <div className='block'>
-          <div className='imageBlock'>
+          <div className='imageBlock imageBlock1'>
             <img src={image1}/>
           </div>
-          <div className='contentBlock'>
+          <div className='contentBlock contentBlock1'>
             <h1>Go Green</h1>
             <p>Reduce the carbon footprint with solar and build a clean image for your business</p>
           </div>
         </div>
         <div className='block'>
-          <div className='contentBlock'>
+          <div className='contentBlock contentBlock2'>
             <h1>Secure your business for the future</h1>
             <p>Rising energy prices can put a strain on any business. Solar power is a cost-effective solution that can lead to massive savings in the future.
             </p>
           </div>
-          <div className='imageBlock'>
+          <div className='imageBlock imageBlock2'>
             <img src={image2}/>
           </div>
         </div>
         <div className='block'>
-          <div className='imageBlock'>
+          <div className='imageBlock imageBlock3'>
             <img src={image3}/>
           </div>
-          <div className='contentBlock'>
+          <div className='contentBlock contentBlock3'>
             <h1>Get the solution that is right for your business</h1>
             <p>Every business is different and will require a different solution. At Freedom Energy we talior a solution that is right for you at the lowest cost.</p>
           </div>

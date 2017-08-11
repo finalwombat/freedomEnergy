@@ -21,24 +21,23 @@ const utilities = () => {
       </div>
       <div className='contentBlocks'>
         <div className='block'>
-          <div className='imageBlock'>
+          <div className='imageBlock imageBlock1'>
             <img src={image1}/>
           </div>
-          <div className='contentBlock'>
-            <h1>minimize
-            project budgets while maximize energy output</h1>
+          <div className='contentBlock contentBlock1'>
+            <h1>The most cost-effective solutions</h1>
             <p>The Project Development Team's objectives are to minimize
             project budgets while maximize energy output, developing the right type of solar solution for each specific site and client.</p>
           </div>
         </div>
         <div className='block'>
-          <div className='contentBlock'>
+          <div className='contentBlock contentBlock2'>
             <h1>Invest in the future</h1>
             <p>Freedom Energy has a network of both private equity and venture capital investment partners offering progressive financing
             models and investment opportunities
             </p>
           </div>
-          <div className='imageBlock'>
+          <div className='imageBlock imageBlock2'>
             <img src={image2}/>
           </div>
         </div>
