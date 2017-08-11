@@ -326,7 +326,9 @@ a.item:hover {
     flex-direction: column;
   }
   .footer .links {
+    margin: 0;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   /* pages */
