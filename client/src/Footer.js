@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='footer'>
-        <Link to="/"><h1>Freedom Solar</h1></Link>
+        <Link to="/"><h1>Freedom Energy</h1></Link>
         <div className='links'>
-          <Button color='blue' icon='facebook' />
+          <a href='https://www.facebook.com/freedomenergysolutionsaus/'> <Button color='blue' icon='facebook' /></a>
           <Link to="/residential"><h3>Residential</h3></Link>
           <Link to="/commercial"><h3>Commercial</h3></Link>
           <Link to="/utilities"><h3>utilities</h3></Link>
