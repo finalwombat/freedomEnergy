@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Menu from './Menu2'
+import SmallMenu from './SmallMenu'
 import { BrowserRouter as Router} from 'react-router-dom'
 import Routes from './Routes'
 import Footer from './Footer'
@@ -28,7 +29,8 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Menu handleItemClick={this.setLocation} location={this.state.location}/>
+          
+          <SmallMenu handleItemClick={this.setLocation} location={this.state.location}/>
           <Routes handleItemClick={this.setLocation}/>
           <Footer handleItemClick={this.setLocation}/>
         </div>
