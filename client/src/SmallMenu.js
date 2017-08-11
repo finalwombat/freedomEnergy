@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const SmallMenu = () => {
   return (
     <div className='menu'>
-      <div className='left-menu'>
+      <div className='home-logo'>
         <NavLink to="/"><img src="logo2.png" alt="Freedom Energy" className="logo"/></NavLink>
       </div>
       <div className='smallMenu'>
