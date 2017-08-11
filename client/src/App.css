@@ -317,6 +317,9 @@ a.item:hover {
     height: 100%
   }
 
+  .mainImage h1 {
+    font-size: 1.5em;
+  }
   .cards {
     height: 100%;
     flex-direction: column;
