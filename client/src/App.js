@@ -5,7 +5,17 @@ import { BrowserRouter as Router} from 'react-router-dom'
 import Routes from './Routes'
 import Footer from './Footer'
 import MediaQuery from 'react-responsive'
+import ReactGA from 'react-ga'
 import './App.css';
+
+//Google analytics
+ReactGA.initialize('UA-104517028-1')
+
+function fireTracking(){
+  ReactGA.set({ page: window.location.pathname + window.location.search})
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
+
 
 class App extends Component {
 
@@ -28,7 +38,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router onUpdate={fireTracking}>
         <div className="App">
           <MediaQuery query='(min-width: 801px)'>
             <Menu handleItemClick={this.setLocation} location={this.state.location}/>
