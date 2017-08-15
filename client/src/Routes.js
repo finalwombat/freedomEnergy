@@ -5,6 +5,8 @@ import Residential from './Residential'
 import Commercial from './Commercial'
 import Utilities from './Utilities'
 import Contact from './Contact'
+import createHistory from 'history/createBrowserHistory'
+const history = createHistory()
 
 const Routes = (props) => {
 
@@ -21,11 +23,11 @@ const Routes = (props) => {
 
   return (
     <div className='main'>
-      <Route exact path="/" render={homeComponent}/>
-      <Route path="/residential" component={Residential}/>
-      <Route path="/commercial" component={Commercial}/>
-      <Route path="/utilities" component={Utilities}/>
-      <Route path="/Contact" component={Contact}/>
+      <Route exact path="/" render={homeComponent} history={history}/>
+      <Route path="/residential" component={Residential} history={history}/>
+      <Route path="/commercial" component={Commercial} history={history}/>
+      <Route path="/utilities" component={Utilities} history={history}/>
+      <Route path="/Contact" component={Contact} history={history}/>
     </div>
   )
 }

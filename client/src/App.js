@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
 import Menu from './Menu2'
 import SmallMenu from './SmallMenu'
-import { BrowserRouter as Router} from 'react-router-dom'
+import {  Router} from 'react-router-dom'
+import createHistory from 'history/createBrowserHistory'
+import ReactGA from 'react-ga'
 import Routes from './Routes'
 import Footer from './Footer'
 import MediaQuery from 'react-responsive'
-import ReactGA from 'react-ga'
 import './App.css';
 
+const history = createHistory()
 //Google analytics
 ReactGA.initialize('UA-104517028-1')
 
-function fireTracking(){
-  ReactGA.set({ page: window.location.pathname + window.location.search})
-  ReactGA.pageview(window.location.pathname + window.location.search)
-}
-
+history.listen((location, action) => {
+  console.log('history listen')
+  ReactGA.set({ page: location.pathname})
+  ReactGA.pageview(location.pathname)
+})
 
 class App extends Component {
 
@@ -34,11 +36,21 @@ class App extends Component {
 
   componentWillMount(){
     this.setLocation()
+    history.listen((location, action) => {
+      console.log('history listen')
+      ReactGA.set({ page: location.pathname})
+      ReactGA.pageview(location.pathname)
+    })
+
+  }
+
+  componentDidMount(){
+
   }
 
   render() {
     return (
-      <Router onUpdate={fireTracking}>
+      <Router history={history}>
         <div className="App">
           <MediaQuery query='(min-width: 801px)'>
             <Menu handleItemClick={this.setLocation} location={this.state.location}/>
