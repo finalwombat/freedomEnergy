@@ -301,6 +301,9 @@ a.item:hover {
   margin-right: 100px;
 }
 
+.ui.top.attached.menu {
+  border: none;
+}
 
 .footer {
   position: absolute;
