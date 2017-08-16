@@ -7,7 +7,7 @@ let transporter = nodemailer.createTransport({
   secure: true,
   auth: {
     user: 'comital333@gmail.com',
-    pass: 'j19811610!'
+    pass: 'jessicka1'
   }
 })
 
@@ -21,14 +21,15 @@ const sendmail = (info, callback) => {
 
   let mailOptions = {
     from: info.email,
-    to: 'comital333@gmail.com',
-    subject: "test",
-    text: "Testing form",
+    to: 'sean.kelly@freedomenergy.com.au',
+    subject: "Enquiry",
+    text: "",
     html: userInfo
   }
 
   transporter.sendMail(mailOptions, (error, info) => {
     if(error){
+      console.log(error)
       callback(error)
     }
     callback('message sent', info.messageId, info.response)
