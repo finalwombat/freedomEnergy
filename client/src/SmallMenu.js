@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { Menu as SemanticMenu, Dropdown, Icon, Segment} from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom'
+import phone from './images/phone.png'
 
 const SmallMenu = () => {
   return (
@@ -24,11 +25,11 @@ const SmallMenu = () => {
             <Dropdown.Item>
               <NavLink to="/contact" className="item">Contact</NavLink>
             </Dropdown.Item>
-            <Dropdown.Item>
-              <a href='tel:+1300695644' title="Call Freedom Solar" className="item call">1300 695 644</a>
-            </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
+        <SemanticMenu.Item>
+          <a href='tel:+1300695644' title="Call Freedom Solar" className="item call"><img src={phone} /></a>
+        </SemanticMenu.Item>
       </SemanticMenu>
     </div>
     </div>

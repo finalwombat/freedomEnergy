@@ -99,6 +99,7 @@ html, body {
   height: 50vh;
 }
 
+
  .mainImage {
     position: relative;
 }
@@ -113,6 +114,26 @@ html, body {
   text-align: center;
   color: white;
 }
+
+.mainImage {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.homeContainer .mainImage img {
+  height: 70vh;
+}
+.homeContainer .mainImage h1 {
+  margin: 0;
+  top: 0;
+}
+.homeContainer .mainImage #warranty {
+  height: 25vh;
+  width: auto;
+  position: absolute;
+  align-self: flex-end;
+}
+
 .mainContent {
   display: flex;
   flex-direction: column;
@@ -280,6 +301,9 @@ a.item:hover {
   margin-right: 100px;
 }
 
+.ui.top.attached.menu {
+  border: none;
+}
 
 .footer {
   position: absolute;
@@ -306,6 +330,16 @@ a.item:hover {
     color: grey;
   }
 
+@media (max-width: 800px) {
+   .mainImage img {
+    width: auto;
+  }
+
+  .services {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .App {
     display: flex;
@@ -320,6 +354,7 @@ a.item:hover {
   .mainImage h1 {
     font-size: 1.5em;
   }
+
   .cards {
     height: 100%;
     flex-direction: column;

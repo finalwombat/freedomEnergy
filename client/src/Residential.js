@@ -2,14 +2,9 @@ import React from 'react'
 import { Button, Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import Image from './images/solar_house.jpg'
-import pannelImage from './images/pannel-sky.jpg'
 import image1 from './images/sun_surfboard.jpg'
 import image2 from './images/solar_sky.jpg'
 
-const whySolarStyle = {
-  backgroundImage: `url(${pannelImage})`,
-  opacity: 0.3
-}
 
 const Residential = () => {
   return (
