@@ -2,6 +2,8 @@ import React from 'react'
 import Slider from './imageSlider/Slider'
 import { Button, Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
+import image from './images/solarhouse2.jpg'
+import warranty from './images/warranty-label.png'
 import residentialImage from './images/solar_house.jpg'
 import commercialImage from './images/solar_commercial.jpg'
 import utilityImage from './images/solar_utility.jpg'
@@ -32,7 +34,11 @@ const Home = (props) => {
 
   return (
     <div className="homeContainer">
-      <Slider />
+    <div className='mainImage'>
+      <img src={image} alt='home'/>
+      <h1>Let Sunlight Power Your Life</h1>
+      <img id="warranty" src={warranty} alt="25 year warranty" />
+    </div>
         <div className="cards">
         <Link to='/residential'>
           <div className="card" style={residentialBackground} onClick={handleItemClick} name='/residential'>
