@@ -78,20 +78,35 @@ html, body {
 .bottomContact .ui.animated.button {
   padding-right: 0!important;
 }
-
+.contactPage {
+  display: flex;
+  margin-top: 50px;
+}
 /* contact page */
 .contactContainer {
   display: flex;
   flex-direction: column;
   max-width: 500px;
   margin-left: auto;
-  margin-right: auto;
 
 }
 
 .contactForm {
   display: flex;
   padding-bottom: 50px;
+}
+
+.contactDetails {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contactDetails h2 {
+  color: #BADA55;
+}
+
+.contactDetails h3 {
+  color: black;
 }
 
 /* residential page */
@@ -338,6 +353,10 @@ a.item:hover {
 
   .services {
     padding: 20px;
+  }
+
+  .contactPage {
+    flex-direction: column;
   }
 }
 
