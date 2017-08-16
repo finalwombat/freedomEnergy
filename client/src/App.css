@@ -91,6 +91,7 @@ html, body {
 
 .contactForm {
   display: flex;
+  padding-bottom: 50px;
 }
 
 /* residential page */
