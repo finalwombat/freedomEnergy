@@ -440,7 +440,8 @@ a.item:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden;
   }
   .logo {
     padding-left: 0;
@@ -453,7 +454,8 @@ a.item:hover {
     margin-bottom: 20px;
   }
   .footer {
-    
+    position: absolute;
+    bottom: 0;
   }
   .mainImage {
     margin-top: 20px;
@@ -581,13 +583,14 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      height: 100vh;
+      height: 100%;
+      overflow: hidden;
     }
     .logo {
       padding-left: 0;
     }
     .main {
-      height: 70vh;
+      height: 70%;
     }
     .menu {
       height: 20vh;
@@ -595,7 +598,8 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     }
 
     .footer {
-
+      position: absolute;
+      bottom: 0;
     }
     .mainImage {
       margin-top: 20px;
@@ -717,20 +721,24 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden;
   }
   .logo {
     padding-left: 0;
   }
   .main {
-    height: 70vh;
+    height: 100%;
   }
   .menu {
     height: 10vh;
     margin-bottom: 20px;
+
   }
   .footer {
-
+    height: 100vh;
+    position: relative;
+    bottom: 0;
   }
   .mainImage {
     margin-top: 20px;
