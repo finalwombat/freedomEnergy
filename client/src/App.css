@@ -167,7 +167,7 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-
+          overflow: hidden;
 }
 .homeContainer .mainImage img {
   height: 70vh;
@@ -607,6 +607,9 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     .mainImage {
       width: auto;
     }
+    .mainImage img {
+     width: auto;
+   }
     .mainImage h1 {
       font-size: 1.5em;
       position: absolute;
@@ -753,6 +756,9 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   .mainImage {
     width: auto;
   }
+  .mainImage img {
+   width: auto;
+ }
   .mainImage h1 {
     font-size: 1.5em;
     position: absolute;
