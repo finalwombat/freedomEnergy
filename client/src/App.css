@@ -447,14 +447,14 @@ a.item:hover {
     padding-left: 0;
   }
   .main {
-    height: 70%;
+    height: auto;
   }
   .menu {
-    height: 10%;
+    height: auto;
     margin-bottom: 20px;
   }
   .footer {
-    height: 20%;
+    height: auto;
   }
   .mainImage {
     margin-top: 20px;
@@ -588,15 +588,15 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
       padding-left: 0;
     }
     .main {
-      height: 70%;
+      height: auto;
     }
     .menu {
-      height: 10%;
+      height: auto;
       margin-bottom: 20px;
     }
 
     .footer {
-      height: 20%;
+      height: auto;
     }
     .mainImage {
       margin-top: 20px;
@@ -725,15 +725,15 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     padding-left: 0;
   }
   .main {
-    height: 70%;
+    height: auto;
   }
   .menu {
-    height: 10%;
+    height: auto;
     margin-bottom: 20px;
 
   }
   .footer {
-    height: 20%;
+    height: auto;
   }
   .mainImage {
     margin-top: 20px;
