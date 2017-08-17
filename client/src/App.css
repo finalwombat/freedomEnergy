@@ -13,12 +13,13 @@ html, body {
 .App {
   width: inherit;
   height: inherit;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
   display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main {
@@ -39,40 +40,46 @@ html, body {
 .slider {
   height: 80vh;
   width: 100vw;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
   display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .cards {
   height: 300px;
   width: 100vw;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
   display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .cards a {
   background-repeat: no-repeat;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .card  {
   height: 100%;
   background-repeat: no-repeat;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
   display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card h2 {
@@ -87,43 +94,40 @@ html, body {
 .bottomContact  {
   margin-top: 5vh;
   margin-bottom: 5vh;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
   display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bottomContact .ui.animated.button {
   padding-right: 0!important;
 }
 .contactPage {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   margin-top: 50px;
 }
 /* contact page */
 .contactContainer {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 500px;
   margin-left: auto;
 
 }
 
 .contactForm {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   padding-bottom: 50px;
 }
@@ -164,12 +168,12 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .mainImage {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   overflow: hidden;
 }
 .homeContainer .mainImage img {
@@ -183,16 +187,18 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   height: 25vh;
   width: auto;
   position: absolute;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .mainContent {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -215,10 +221,8 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .block {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   width: 100vw;
   height: 45vh;
@@ -233,14 +237,19 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   height: 45vh;
   width: 50vw;
   background-color: #E6EBED;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 10vw;
   padding-right: 10vw;
 }
@@ -250,7 +259,8 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .whySolar {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   max-width: 700px;
   background-color: #BADA55;
   opacity: 0.8;
@@ -271,10 +281,8 @@ ul.dotPoint {
 }
 /* Menu */
 .menu {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   margin-left: 0;
   margin-right: 0;
@@ -283,14 +291,14 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
 .right-menu {
   margin: 0 0 7px;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   margin-left: auto;
   margin-right: 10vw;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
  .item {
@@ -304,12 +312,14 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   border-bottom-width: 2px;
   color: rgba(0,0,0,.87);
   -webkit-transition: color .1s ease;
+  -o-transition: color .1s ease;
   transition: color .1s ease;
 }
 
 a.item:hover {
   background-color: transparent;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-color: #BADA55;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.95);
@@ -334,7 +344,8 @@ a.item:hover {
 
 .menu .item.call:hover {
   background-color: transparent;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: none;
   font-weight: bold;
   color: #BADB90
@@ -344,7 +355,8 @@ a.item:hover {
 .ui.secondary.pointing.menu .link.item:hover,
 .ui.secondary.pointing.menu a.item:hover {
   background-color: transparent;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-color: #BADA55;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.95);
@@ -354,7 +366,8 @@ a.item:hover {
 .ui.secondary.pointing.menu .link.item.call:hover,
 .ui.secondary.pointing.menu a.item.call:hover {
   background-color: transparent;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: none;
   font-weight: bold;
   color: #BADB90
@@ -362,7 +375,8 @@ a.item:hover {
 
  .item.active {
   background-color: transparent;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-color: #BADB90;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.95);
@@ -381,14 +395,19 @@ a.item:hover {
   position: absolute;
   bottom: 0;
   background-color: black;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   width: 100%;
   padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .links {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
 }
@@ -416,12 +435,17 @@ a.item:hover {
   }
 
   .contactPage {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 @media (max-width: 600px) {
   .App {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .logo {
@@ -437,30 +461,45 @@ a.item:hover {
 
   .cards {
     height: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer {
     position: relative;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer .links {
     margin: 0;
-    flex-direction: column;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   /* pages */
   .contentBlocks {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .block {
     height: 100%;
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100vw;
   }
   .imageBlock {
@@ -473,14 +512,19 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     width: 100vw;
     height: 45vh;
     background-color: #E6EBED;
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;  /* TWEENER - IE 10 */
-display: -webkit-flex; /* NEW - Chrome */
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */    /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Chrome */
 display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-left: 10vw;
     padding-right: 10vw;
   }
@@ -493,21 +537,33 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   }
 
   .imageBlock1 {
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .contentBlock1 {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .imageBlock2 {
-    order: 3;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .contentBlock2 {
-    order: 4;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
   .imageBlock3 {
-    order: 5;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
   .contentBlock3 {
-    order: 6;
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
   }
 }
