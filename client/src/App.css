@@ -414,7 +414,7 @@ a.item:hover {
     color: grey;
   }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 
    .menu {
      margin-bottom: 20px;
@@ -440,15 +440,20 @@ a.item:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100vh;
   }
   .logo {
     padding-left: 0;
   }
   .main {
-    height: 50vh;
+    height: 70vh;
   }
   .menu {
+    height: 10vh;
     margin-bottom: 20px;
+  }
+  .footer {
+    height: 20vh;
   }
   .mainImage {
     margin-top: 20px;
@@ -576,15 +581,21 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      height: 100vh;
     }
     .logo {
       padding-left: 0;
     }
     .main {
-      height: 50vh;
+      height: 70vh;
     }
     .menu {
+      height: 20vh;
       margin-bottom: 20px;
+    }
+
+    .footer {
+      height: 20vh;
     }
     .mainImage {
       margin-top: 20px;
@@ -707,15 +718,20 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100vh;
   }
   .logo {
     padding-left: 0;
   }
   .main {
-    height: 50vh;
+    height: 70vh;
   }
   .menu {
+    height: 10vh;
     margin-bottom: 20px;
+  }
+  .footer {
+    height: 20vh;
   }
   .mainImage {
     margin-top: 20px;
