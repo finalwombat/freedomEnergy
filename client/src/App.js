@@ -38,6 +38,11 @@ class App extends Component {
     this.setLocation()
     history.listen((location, action) => {
       console.log('history listen')
+      const dropdownMenu = document.querySelector('.menu.transition.visible')
+      if (dropdownMenu)
+        {
+          dropdownMenu.classList.remove('visible')
+        }
       ReactGA.set({ page: location.pathname})
       ReactGA.pageview(location.pathname)
     })
