@@ -428,7 +428,7 @@ a.item:hover {
   .homeContainer .mainImage #warranty {
     height: 25vh;
     width: auto;
-    position: relative;
+    position: absolute;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
@@ -466,7 +466,7 @@ a.item:hover {
 
   .mainImage h1 {
     font-size: 1.5em;
-    position: relative;
+    position: absolute;
   }
 
   .cards {
@@ -609,13 +609,13 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     }
     .mainImage h1 {
       font-size: 1.5em;
-      position: relative;
+      position: absolute;
     }
 
     .homeContainer .mainImage #warranty {
       height: 25vh;
       width: auto;
-      position: relative;
+      position: absolute;
       -ms-flex-item-align: end;
           align-self: flex-end;
     }
@@ -751,17 +751,17 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     position: relative;
   }
   .mainImage {
-
+    width: auto;
   }
   .mainImage h1 {
     font-size: 1.5em;
-    position: relative;
+    position: absolute;
   }
 
   .homeContainer .mainImage #warranty {
     height: 25vh;
     width: auto;
-    position: relative;
+    position: absolute;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
