@@ -566,29 +566,12 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   }
 }
 
-@media only screen and (min-device-width : 375px) and
-(max-device-width : 667px) {
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
 
-     .menu {
-       margin-bottom: 20px;
-     }
-     .mainImage {
-       margin-top: 20px;
-     }
-     .mainImage img {
-      width: auto;
-    }
-
-    .services {
-      padding: 20px;
-    }
-
-    .contactPage {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-    }
     .App {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -717,8 +700,8 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
           -ms-flex-order: 6;
               order: 6;
     }
-  }
 }
+
 @media (max-width: 600px) {
   .App {
     display: -webkit-box;
