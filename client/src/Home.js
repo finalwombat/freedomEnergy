@@ -38,7 +38,9 @@ const Home = (props) => {
 
   return (
     <div className="homeContainer">
-    <div className='mainImage' style={mainBackground}>
+    <div className='mainImage' >
+      
+      <img src={image} alt='home'/>
       <h1>Let Sunlight Power Your Life</h1>
       <img id="warranty" src={warranty} alt="25 year warranty" />
     </div>
