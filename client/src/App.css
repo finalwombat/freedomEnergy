@@ -447,15 +447,14 @@ a.item:hover {
     padding-left: 0;
   }
   .main {
-    height: 70vh;
+    height: 100%
   }
   .menu {
-    height: 10vh;
+    height: 100%
     margin-bottom: 20px;
   }
   .footer {
-    position: absolute;
-    bottom: 0;
+    height: 100%;
   }
   .mainImage {
     margin-top: 20px;
@@ -584,22 +583,19 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
       display: -ms-flexbox;
       display: flex;
       height: 100%;
-      overflow: hidden;
     }
     .logo {
       padding-left: 0;
     }
     .main {
-      height: 70%;
+      height: 100%;
     }
     .menu {
-      height: 20vh;
+      height: 100%;
       margin-bottom: 20px;
     }
 
     .footer {
-      position: absolute;
-      bottom: 0;
     }
     .mainImage {
       margin-top: 20px;
@@ -731,14 +727,12 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     height: 100%;
   }
   .menu {
-    height: 10vh;
+    height: 100%;
     margin-bottom: 20px;
 
   }
   .footer {
-    height: 100vh;
-    position: relative;
-    bottom: 0;
+    height: 100%;
   }
   .mainImage {
     margin-top: 20px;
