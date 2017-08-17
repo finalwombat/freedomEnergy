@@ -457,7 +457,12 @@ a.item:hover {
   .main {
     height: 100%
   }
-
+  .menu {
+    margin-bottom: 20px;
+  }
+  .mainImage {
+    margin-top: 20px;
+  }
   .mainImage h1 {
     font-size: 1.5em;
   }
