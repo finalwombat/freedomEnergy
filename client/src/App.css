@@ -417,7 +417,7 @@ a.item:hover {
 @media (max-width: 800px) {
 
    .menu {
-     margin-bottom: 20px;
+
    }
    .mainImage {
 
@@ -455,19 +455,15 @@ a.item:hover {
   }
   .main {
     height: auto;
-    margin-bottom: 50px;
   }
   .menu {
     height: auto;
-    margin-bottom: 20px;
   }
   .footer {
     height: auto;
     position: relative;
   }
-  .mainImage {
-    margin-top: 20px;
-  }
+
   .mainImage h1 {
     font-size: 1.5em;
     position: absolute;
@@ -599,11 +595,9 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     }
     .main {
       height: auto;
-      margin-bottom: 50px;
     }
     .menu {
       height: auto;
-      margin-bottom: 20px;
     }
 
     .footer {
@@ -747,11 +741,9 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   }
   .main {
     height: auto;
-    margin-bottom: 50px;
   }
   .menu {
     height: auto;
-    margin-bottom: 20px;
 
   }
   .footer {
