@@ -424,7 +424,14 @@ a.item:hover {
 @media (max-width: 1000px) {
 
    .menu {
+     height: 20vh;
      margin-bottom: 20px;
+   }
+   .homeContainer {
+     height: 50vh;
+   }
+   .footer {
+     height: 30vh;
    }
    .mainImage {
      margin-top: 20px;
