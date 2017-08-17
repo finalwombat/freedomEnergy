@@ -10,6 +10,7 @@ display: -ms-flexbox;
 display: flex;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 50px;
   font-size: 1.07142857rem;
 }
 const SmallMenu = () => {
