@@ -426,6 +426,9 @@ a.item:hover {
    .menu {
      margin-bottom: 20px;
    }
+   .mainImage {
+     margin-top: 20px;
+   }
    .mainImage img {
     width: auto;
   }
