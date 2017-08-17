@@ -8,6 +8,10 @@ import residentialImage from './images/solar_house.jpg'
 import commercialImage from './images/solar_commercial.jpg'
 import utilityImage from './images/solar_utility.jpg'
 
+const mainBackground = {
+  backgroundImage: `url(${image})`
+}
+
 const residentialBackground = {
   backgroundImage: `url(${residentialImage})`,
 }
@@ -34,8 +38,7 @@ const Home = (props) => {
 
   return (
     <div className="homeContainer">
-    <div className='mainImage'>
-      <img src={image} alt='home'/>
+    <div className='mainImage' style={mainBackground}>
       <h1>Let Sunlight Power Your Life</h1>
       <img id="warranty" src={warranty} alt="25 year warranty" />
     </div>
