@@ -616,6 +616,7 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     .mainImage h1 {
       font-size: 1.5em;
       position: absolute;
+      z-index: 1;
     }
 
     .homeContainer .mainImage #warranty {
@@ -624,6 +625,7 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
       position: absolute;
       -ms-flex-item-align: end;
           align-self: flex-end;
+          z-index: 1;
     }
 
 
@@ -766,6 +768,7 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   .mainImage h1 {
     font-size: 1.5em;
     position: absolute;
+    z-index: 1;
   }
 
   .homeContainer .mainImage #warranty {
@@ -774,6 +777,7 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     position: absolute;
     -ms-flex-item-align: end;
         align-self: flex-end;
+    z-index: 1;
   }
 
   .cards {
