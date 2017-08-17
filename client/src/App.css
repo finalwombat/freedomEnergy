@@ -448,6 +448,7 @@ a.item:hover {
   }
   .main {
     height: auto;
+    margin-bottom: 50px;
   }
   .menu {
     height: auto;
@@ -589,6 +590,7 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     }
     .main {
       height: auto;
+      margin-bottom: 50px;
     }
     .menu {
       height: auto;
@@ -726,6 +728,7 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   }
   .main {
     height: auto;
+    margin-bottom: 50px;
   }
   .menu {
     height: auto;
