@@ -13,6 +13,10 @@ const menuStyle = {
   'margin-bottom': '50px',
   'font-size': '1.07142857rem'
 }
+
+const handleItemClick = (e) => {
+  console.log('clicked')
+}
 const SmallMenu = () => {
   return (
     <div className='menu' style={menuStyle}>
@@ -23,18 +27,18 @@ const SmallMenu = () => {
       <SemanticMenu attached='top'>
         <Dropdown item icon='content' simple>
           <Dropdown.Menu>
-            <NavLink to="/residential" className="item"><Dropdown.Item>
-              Residential
-            </Dropdown.Item></NavLink>
-            <NavLink to="/commercial" className="item"><Dropdown.Item>
-              Commercial
-            </Dropdown.Item></NavLink>
-            <NavLink to="/utilities" className="item"><Dropdown.Item>
-              Utilities
-            </Dropdown.Item></NavLink>
-            <NavLink to="/contact" className="item"><Dropdown.Item>
-              Contact
-            </Dropdown.Item></NavLink>
+            <Dropdown.Item onClick={this.handleItemClick}>
+              <NavLink to="/residential" className="item">Residential</NavLink>
+            </Dropdown.Item>
+            <Dropdown.Item onClick={this.handleItemClick}>
+              <NavLink to="/commercial" className="item">Commercial</NavLink>
+            </Dropdown.Item>
+            <Dropdown.Item onClick={this.handleItemClick}>
+              <NavLink to="/utilities" className="item">Utilities</NavLink>
+            </Dropdown.Item>
+            <Dropdown.Item onClick={this.handleItemClick}>
+              <NavLink to="/contact" className="item">Contact</NavLink>
+            </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         <SemanticMenu.Item>
