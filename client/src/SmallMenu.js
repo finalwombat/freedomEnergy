@@ -3,9 +3,18 @@ import { Menu as SemanticMenu, Dropdown, Icon, Segment} from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom'
 import phone from './images/phone.png'
 
+
+const menuStyle = {
+  display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 1.07142857rem;
+}
 const SmallMenu = () => {
   return (
-    <div className='menu'>
+    <div className='menu' style={menuStyle}>
       <div className='home-logo'>
         <NavLink to="/"><img src="logo2.png" alt="Freedom Energy" className="logo"/></NavLink>
       </div>
