@@ -453,7 +453,7 @@ a.item:hover {
     margin-bottom: 20px;
   }
   .footer {
-    height: 20vh;
+    
   }
   .mainImage {
     margin-top: 20px;
@@ -470,8 +470,7 @@ a.item:hover {
             flex-direction: column;
   }
   .footer {
-    position: absolute;
-    bottom: 0;
+
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -596,9 +595,7 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     }
 
     .footer {
-      height: 20vh;
-      position: absolute;
-      bottom: 0;
+
     }
     .mainImage {
       margin-top: 20px;
@@ -733,9 +730,7 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     margin-bottom: 20px;
   }
   .footer {
-    height: 20vh;
-    position: absolute;
-    bottom: 0;
+
   }
   .mainImage {
     margin-top: 20px;
