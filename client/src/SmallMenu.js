@@ -27,7 +27,7 @@ const SmallMenu = () => {
       <SemanticMenu attached='top'>
         <Dropdown item icon='content' simple>
           <Dropdown.Menu>
-            <Dropdown.Item onClick={this.handleItemClick}>
+            <Dropdown.Item onChange={this.handleItemClick}>
               <NavLink to="/residential" className="item">Residential</NavLink>
             </Dropdown.Item>
             <Dropdown.Item onClick={this.handleItemClick}>
