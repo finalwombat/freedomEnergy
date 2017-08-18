@@ -33,6 +33,7 @@ export default class SmallMenu extends Component {
       </div>
       <div className='smallMenu'>
       <Menu right width={'40%'} isOpen={this.state.isOpen}>
+      <a href='tel:+1300695644' title="Call Freedom Solar" className="item call"><img src={phone} /></a>
         <NavLink to="/residential" className="item" onClick={this.handleItemClick}>Residential</NavLink>
         <NavLink to="/commercial" className="item" onClick={this.handleItemClick}>Commercial</NavLink>
         <NavLink to="/utilities" className="item" onClick={this.handleItemClick}>Utilities</NavLink>

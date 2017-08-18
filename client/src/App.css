@@ -345,6 +345,10 @@ a.item:hover {
   color: #BADB90
 }
 
+.call img {
+  right: 5px;
+  width: 20px;
+}
 .ui.secondary.pointing.menu .dropdown.item:hover,
 .ui.secondary.pointing.menu .link.item:hover,
 .ui.secondary.pointing.menu a.item:hover {
