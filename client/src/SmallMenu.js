@@ -14,28 +14,37 @@ const menuStyle = {
   'font-size': '1.07142857rem'
 }
 
-const handleItemClick = (e) => {
-  console.log('clicked')
+const handleItemClick = () => {
+  this.setState({isOpen: !this.state.isOpen})
 }
-const SmallMenu = () => {
-  return (
+export default class SmallMenu extends Component {
+  constructor(props){
+    super(props)
+
+    this.state = {
+      isOpen: false
+    }
+  }
+  render() {
+    return (
     <div className='menu' style={menuStyle}>
       <div className='home-logo'>
         <NavLink to="/"><img src="logo2.png" alt="Freedom Energy" className="logo"/></NavLink>
       </div>
       <div className='smallMenu'>
-      <Menu right width={'40%'}>
-        <NavLink to="/residential" className="item">Residential</NavLink>
-        <NavLink to="/commercial" className="item">Commercial</NavLink>
-        <NavLink to="/utilities" className="item">Utilities</NavLink>
-        <NavLink to="/contact" className="item">Contact</NavLink>
+      <Menu right width={'40%'} isOpen={this.state.isOpen}>
+        <NavLink to="/residential" className="item" onClick={this.handleItemClick}>Residential</NavLink>
+        <NavLink to="/commercial" className="item" onClick={this.handleItemClick}>Commercial</NavLink>
+        <NavLink to="/utilities" className="item" onClick={this.handleItemClick}>Utilities</NavLink>
+        <NavLink to="/contact" className="item" onClick={this.handleItemClick}>Contact</NavLink>
       </Menu>
     </div>
     </div>
   )
+  }
 }
 
-export default SmallMenu
+
 
 // <SemanticMenu attached='top'>
 //   <Dropdown item icon='content' simple>
