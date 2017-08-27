@@ -21,7 +21,7 @@ const sendmail = (info, callback) => {
 
   let mailOptions = {
     from: info.email,
-    to: 'sean.kelly@freedomenergy.com.au',
+    to: 'seankelly7@me.com',
     subject: "Enquiry",
     text: "",
     html: userInfo
