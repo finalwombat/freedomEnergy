@@ -477,6 +477,16 @@ a.item:hover {
   }
 }
 
+.testimonial {
+  width: auto;
+  padding: 50px;
+  padding-left: 25vw;
+  padding-right:25vw;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.2em;
+  font-style: italic;
+}
 @media (max-width: 800px) {
 
    .menu {
