@@ -69,7 +69,7 @@ const Home = (props) => {
           Before solar our energy bill was around $1100 a quarter,
           its now reduced to roughly $300 for the same period last year.
 Going solar was easy , we’re happy with the service we received, and our energy bills no longer a problem!"</p>
-          <p>Terry & Angela McGinnis Port Pirie SA. </p>
+          <p>Terry & Angela McGinnis - Port Pirie SA. </p>
         </div>
     </div>
   )
