@@ -26,8 +26,8 @@ const Routes = (props) => {
     <div className='main'>
       <Route exact path="/" render={homeComponent} history={history}/>
       <Route path="/residential" component={Residential} history={history}/>
-      <Route path="/commercial" component={Commercial} history={history}/>
-      <Route path="/roofleasing" component={RoofLeasing} history={history}/>
+      <Route path="/commercial/commercialsolar" component={Commercial} history={history}/>
+      <Route path="/commercial/commercialroofleasing" component={RoofLeasing} history={history}/>
       <Route path="/utilities" component={Utilities} history={history}/>
       <Route path="/Contact" component={Contact} history={history}/>
     </div>
