@@ -9,7 +9,7 @@ const Menu2 = () => {
       </div>
       <div className='right-menu'>
         <NavLink to="/residential" className="item">Residential</NavLink>
-        <NavLink to="/commercial" className="item">Commercial</NavLink>
+        <NavLink to="/commercial/commercialsolar" className="item">Commercial</NavLink>
         <NavLink to="/utilities" className="item">Utilities</NavLink>
         <NavLink to="/contact" className="item">Contact</NavLink>
         <a href='tel:+1300695644' title="Call Freedom Solar" className="item call">1300 695 644</a>
