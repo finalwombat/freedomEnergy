@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
+import SubMenuCommercial from './SubMenuCommercial'
 import image from './images/solar_building.jpg'
 import image1 from './images/barley-field.jpg'
 import image2 from './images/solar-panel-2.png'
@@ -10,6 +11,7 @@ import tick from './images/tick2.png'
 const RoofLeasing = () => {
   return (
     <div className='commercialContainer'>
+      <SubMenuCommercial />
       <div className='mainImage'>
         <img src={image} alt='commercial'/>
         <h1>Roof Lease Agreement</h1>
