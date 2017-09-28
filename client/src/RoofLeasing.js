@@ -6,6 +6,7 @@ import image from './images/solar_building.jpg'
 import image1 from './images/barley-field.jpg'
 import image2 from './images/solar-panel-2.png'
 import image3 from './images/solar-install.jpg'
+import amanda from './images/amanda.jpg'
 import tick from './images/tick2.png'
 
 const RoofLeasing = () => {
@@ -57,6 +58,9 @@ const RoofLeasing = () => {
             <li>High visibility green benefit for your brand</li>
           </ul>
         </div>
+      </div>
+      <div className="amanda">
+        <img src={amanda} alt='commercial'/>
       </div>
       <div className='bottomContact'>
       <Link to="/contact">
