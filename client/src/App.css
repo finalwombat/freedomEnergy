@@ -404,6 +404,11 @@ a.item:hover {
 .subMenu .right-menu {
   margin-right: 25vw;
 }
+
+.amanda {
+  display: flex;
+  justify-content: center;
+}
 .footer {
   position: absolute;
   bottom: 0;
