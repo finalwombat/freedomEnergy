@@ -389,6 +389,21 @@ a.item:hover {
   border: none;
 }
 
+.subMenu {
+  background-color: rgb(70, 71, 73);
+}
+
+.subMenu .item {
+  color: white;
+}
+
+.subMenu .item:hover {
+  color: grey;
+}
+
+.subMenu .right-menu {
+  margin-right: 25vw;
+}
 .footer {
   position: absolute;
   bottom: 0;
