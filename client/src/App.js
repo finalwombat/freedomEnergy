@@ -14,7 +14,6 @@ const history = createHistory()
 ReactGA.initialize('UA-104517028-1')
 
 history.listen((location, action) => {
-  console.log('history listen')
   ReactGA.set({ page: location.pathname})
   ReactGA.pageview(location.pathname)
 })
@@ -37,7 +36,6 @@ class App extends Component {
   componentWillMount(){
     this.setLocation()
     history.listen((location, action) => {
-      console.log('history listen')
       const dropdownMenu = document.querySelector('.ui.simple.active.dropdo')
       if (dropdownMenu)
         {
