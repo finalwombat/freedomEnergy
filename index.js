@@ -37,7 +37,7 @@ app.post('/contactForm', (req, res) => {
   const info = req.body.info
   mailer.sendmail(info, (result) => res.send(result))
 })
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 80;
 app.listen(port);
 
 console.log(`Freedom Energy is listen on port ${port}`);
