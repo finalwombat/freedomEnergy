@@ -39,7 +39,7 @@ const Home = (props) => {
   return (
     <div className="homeContainer">
     <div className='mainImage' >
-      
+
       <img src={image} alt='home'/>
       <h1>Let Sunlight Power Your Life</h1>
       <img id="warranty" src={warranty} alt="25 year warranty" />
@@ -63,6 +63,13 @@ const Home = (props) => {
               {findOutMoreButton}
           </div>
         </Link>
+        </div>
+        <div className='testimonial'>
+          <p>"Freedom Energy did a great job installing our 10kw system.
+          Before solar our energy bill was around $1100 a quarter,
+          its now reduced to roughly $300 for the same period last year.
+Going solar was easy , we’re happy with the service we received, and our energy bills no longer a problem!"</p>
+          <p>Terry & Angela McGinnis - Port Pirie SA. </p>
         </div>
     </div>
   )

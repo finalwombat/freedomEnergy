@@ -252,6 +252,9 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   font-size: 1.5em;
 }
 
+.roofleasing .contentBlock p {
+  font-size: 1.3em;
+}
 .whySolar {
   -ms-flex-item-align: center;
       align-self: center;
@@ -389,6 +392,26 @@ a.item:hover {
   border: none;
 }
 
+.subMenu {
+  background-color: rgb(70, 71, 73);
+}
+
+.subMenu .item {
+  color: white;
+}
+
+.subMenu .item:hover {
+  color: grey;
+}
+
+.subMenu .right-menu {
+  margin-right: 25vw;
+}
+
+.amanda {
+  display: flex;
+  justify-content: center;
+}
 .footer {
   position: absolute;
   bottom: 0;
@@ -477,6 +500,16 @@ a.item:hover {
   }
 }
 
+.testimonial {
+  width: auto;
+  padding: 50px;
+  padding-left: 25vw;
+  padding-right:25vw;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.2em;
+  font-style: italic;
+}
 @media (max-width: 800px) {
 
    .menu {
