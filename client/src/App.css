@@ -644,6 +644,10 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     font-size: 1em;
   }
 
+  .roofleasing .contentBlock  {
+    padding-top: 10px;
+    height: 70vh;
+  }
   .imageBlock1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -802,6 +806,11 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
       font-size: 1em;
     }
 
+    .roofleasing .contentBlock  {
+      padding-top: 10px;
+      height: 70vh;
+    }
+
     .imageBlock1 {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
@@ -952,6 +961,11 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
   }
   .contentBlock p {
     font-size: 1em;
+  }
+
+  .roofleasing .contentBlock  {
+    padding-top: 10px;
+    height: 70vh;
   }
 
   .imageBlock1 {
