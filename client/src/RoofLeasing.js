@@ -70,9 +70,6 @@ const RoofLeasing = () => {
           </ul>
         </div>
       </div>
-      <div className="amanda">
-        <img src={amanda} alt='commercial'/>
-      </div>
       <div className='bottomContact'>
       <Link to="/contact">
           <Button animated size='big'>
