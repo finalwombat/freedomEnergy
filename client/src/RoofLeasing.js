@@ -5,7 +5,7 @@ import SubMenuCommercial from './SubMenuCommercial'
 import image from './images/solar_building.jpg'
 import image1 from './images/solar-panel-sky.jpg'
 import image2 from './images/solar-install.jpg'
-import amanda from './images/amanda.jpg'
+import image3 from './images/steps.png'
 import tick from './images/tick2.png'
 
 const RoofLeasing = () => {
@@ -69,6 +69,10 @@ const RoofLeasing = () => {
             <li>High visibility green benefit for your brand</li>
           </ul>
         </div>
+      </div>
+      <div className='stepsImage'>
+        <h1>HOW ROOF LEASING WORKS</h1>
+        <img src={image3} alt='steps'/>
       </div>
       <div className='bottomContact'>
       <Link to="/contact">
