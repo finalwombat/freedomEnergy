@@ -694,12 +694,13 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
         -ms-flex-order: 6;
             order: 6;
   }
-}
-.stepsImage img {
+  .stepsImage img {
 
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
+  }
 }
+
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
@@ -861,12 +862,13 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
           -ms-flex-order: 6;
               order: 6;
     }
-}
-.stepsImage img {
+    .stepsImage img {
 
-  width: 100vw;
-  height: 100vh;
+      width: 100vw;
+      height: 100vh;
+    }
 }
+
 @media (max-width: 600px) {
   .App {
     display: -webkit-box;
@@ -1022,9 +1024,10 @@ display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
         -ms-flex-order: 6;
             order: 6;
   }
-}
-.stepsImage img {
 
-  width: 100vw;
-  height: 100vh;
+  .stepsImage img {
+
+    width: 100vw;
+    height: 100vh;
+  }
 }
